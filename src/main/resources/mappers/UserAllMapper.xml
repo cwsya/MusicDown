@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.cwsya.tadmin.mapper.UserAllMapper">
+<mapper namespace="org.cwsya.hifiadmin.mapper.UserAllMapper">
     
-    <resultMap id="UserAll" type="org.cwsya.tadmin.pojo.PO.UserAllEntity">
+    <resultMap id="UserAll" type="org.cwsya.hifiadmin.pojo.PO.UserAllEntity">
         <id property="id" column="id"/>
         <result property="name" column="name"/>
         <collection property="role" javaType="List" column="role" ofType="String">

@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.cwsya</groupId>
-    <artifactId>TAdmin</artifactId>
+    <artifactId>HifiAdmin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>TAdmin</name>
-    <description>TAdmin</description>
+    <name>HifiAdmin</name>
+    <description>HifiAdmin</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>

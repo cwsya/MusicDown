@@ -6,16 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="TAdmin" />
+        <module name="HifiAdmin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="TAdmin" target="1.8" />
+      <module name="HifiAdmin" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="TAdmin" options="-parameters" />
+      <module name="HifiAdmin" options="-parameters" />
     </option>
   </component>
 </project>

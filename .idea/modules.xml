@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TAdmin.iml" filepath="$PROJECT_DIR$/TAdmin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HifiAdmin.iml" filepath="$PROJECT_DIR$/HifiAdmin.iml" />
     </modules>
   </component>
 </project>

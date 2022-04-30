@@ -7,19 +7,75 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c6cebe-0e92-490b-b895-e9fea6f4a1fd" name="变更" comment="rbac基本完工">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/controller/RoleAccessController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/controller/RoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/controller/UserRoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/service/RoleAccessService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/service/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/service/UserRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/service/impl/RoleAccessServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/service/impl/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/service/impl/UserRoleServiceImpl.java" afterDir="false" />
+    <list default="true" id="a9c6cebe-0e92-490b-b895-e9fea6f4a1fd" name="变更" comment="项目雏形">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/controller/musicController/MusicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/mapper/MDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/pojo/PO/MDataEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/pojo/VO/AccessEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/pojo/VO/AccessRoleEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/pojo/VO/MDataEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/pojo/VO/MDataPageEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/pojo/VO/RoleAccessEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/pojo/VO/RoleEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/pojo/VO/RoleUserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/pojo/VO/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/pojo/VO/UserRoleEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/MusicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/impl/MusicServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/util/BeanCopyUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/cwsya/tadmin/TAdminApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/cwsya/tadmin/TAdminApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAdmin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HifiAdmin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/TAdminApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/TAdminApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/config/MyCorsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/config/MyCorsFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/config/MyMetaObjectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/config/MyMetaObjectHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/config/MybatisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/config/SaTokenConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/config/SaTokenConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/config/extend/SaTokenRedisExtend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/config/extend/SaTokenRedisExtend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/controller/AccessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/controller/userController/AccessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/controller/userController/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/controller/RoleAccessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/controller/userController/RoleAccessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/controller/userController/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/controller/userController/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/controller/UserRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/controller/userController/UserRoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/exception/ParameterException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/exception/ParameterException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/exception/UserErrorException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/exception/UserErrorException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/exception/handling/HttpExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/exception/handling/HttpExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/exception/handling/LoginExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/exception/handling/LoginExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/exception/handling/SaTokenExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/exception/handling/SaTokenExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/mapper/AccessMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/mapper/AccessMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/mapper/RoleAccessMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/mapper/RoleAccessMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/mapper/RoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/mapper/UserAllMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/mapper/UserAllMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/mapper/UserRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/mapper/UserRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/pojo/PO/AccessEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/pojo/PO/AccessEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/pojo/PO/RoleAccessEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/pojo/PO/RoleAccessEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/pojo/PO/RoleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/pojo/PO/RoleEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/pojo/PO/UserAllEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/pojo/PO/UserAllEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/pojo/PO/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/pojo/PO/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/pojo/PO/UserRoleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/pojo/PO/UserRoleEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/pojo/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/pojo/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/pojo/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/pojo/ResultCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/pojo/VO/UserEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/service/AccessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/AccessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/service/RoleAccessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/RoleAccessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/service/UserRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/UserRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/service/impl/AccessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/impl/AccessServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/service/impl/RoleAccessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/impl/RoleAccessServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/service/impl/UserRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/impl/UserRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/tadmin/util/ObjectMapperUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/util/ObjectMapperUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/UserAllMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserAllMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/cwsya/tadmin/TAdminApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/cwsya/hifiadmin/TAdminApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +94,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JRebelWorkspace">
@@ -63,7 +124,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "E:/code/java/idea/TAdmin/src/main/java/org/cwsya/tadmin/mapper",
+    "last_opened_file_path": "E:/code/java/hifi/TAdmin/src/main/java/org/cwsya/hifiadmin/mapper",
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.449862",
@@ -84,21 +145,26 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\java\hifi\TAdmin\src\main\java\org\cwsya\hifiadmin\mapper" />
+      <recent name="E:\code\java\hifi\TAdmin\src\main\java\org\cwsya\hifiadmin\pojo\PO" />
       <recent name="E:\code\java\idea\TAdmin\src\main\java\org\cwsya\tadmin\mapper" />
       <recent name="E:\code\java\idea\TAdmin\src\main\java\org\cwsya\tadmin\pojo\PO" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.cwsya.hifiadmin.pojo.VO" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.TAdminApplication">
     <configuration name="TAdminApplicationTests.ceshi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TAdmin" />
+      <module name="HifiAdmin" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.cwsya.tadmin.*" />
+          <option name="PATTERN" value="org.cwsya.hifiadmin.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.cwsya.tadmin" />
-      <option name="MAIN_CLASS_NAME" value="org.cwsya.tadmin.TAdminApplicationTests" />
+      <option name="MAIN_CLASS_NAME" value="org.cwsya.hifiadmin.TAdminApplicationTests" />
       <option name="METHOD_NAME" value="ceshi" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -106,15 +172,15 @@
       </method>
     </configuration>
     <configuration name="TAdminApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TAdmin" />
+      <module name="HifiAdmin" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.cwsya.tadmin.*" />
+          <option name="PATTERN" value="org.cwsya.hifiadmin.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.cwsya.tadmin" />
-      <option name="MAIN_CLASS_NAME" value="org.cwsya.tadmin.TAdminApplicationTests" />
+      <option name="MAIN_CLASS_NAME" value="org.cwsya.hifiadmin.TAdminApplicationTests" />
       <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -122,8 +188,8 @@
       </method>
     </configuration>
     <configuration name="TAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="TAdmin" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.cwsya.tadmin.TAdminApplication" />
+      <module name="HifiAdmin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.cwsya.hifiadmin.TAdminApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,6 +216,7 @@
       <workItem from="1650888527768" duration="8922000" />
       <workItem from="1650981599710" duration="3413000" />
       <workItem from="1651022753212" duration="37167000" />
+      <workItem from="1651296694940" duration="12631000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1650729737231</created>
@@ -224,6 +291,7 @@
     <MESSAGE value="统一参数接收方式" />
     <MESSAGE value="权限类的操作&#10;idea不推荐Autowired问题&#10;sql小bug" />
     <MESSAGE value="rbac基本完工" />
-    <option name="LAST_COMMIT_MESSAGE" value="rbac基本完工" />
+    <MESSAGE value="项目雏形" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目雏形" />
   </component>
 </project>
