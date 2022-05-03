@@ -10,6 +10,7 @@ import org.cwsya.hifiadmin.pojo.Result;
 import org.cwsya.hifiadmin.pojo.ResultCodeEnum;
 import org.cwsya.hifiadmin.pojo.VO.MDataPageEntity;
 import org.cwsya.hifiadmin.service.MusicService;
+import org.cwsya.hifiadmin.service.reptile.ReptileFactory;
 import org.cwsya.hifiadmin.util.BeanCopyUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -91,6 +92,18 @@ public class MusicController {
         MDataEntity music = musicService.getMusic(id);
         ResultCodeEnum codeEnum = ResultCodeEnum.SUCCESS;
         return new Result<>(codeEnum.getResultCode(),codeEnum.getMessage(),new org.cwsya.hifiadmin.pojo.VO.MDataEntity(music.getId(),music.getName(), music.getData()));
+    }
+
+    @SaCheckRole("admin")
+    @PostMapping("/upCookie")
+    public Result<?> upCookie(@RequestBody JSONObject jsonObject) throws ParameterException {
+        String cookie = jsonObject.getStr("cookie");
+        String name = jsonObject.getStr("name");
+        if (StrUtil.isBlankIfStr(cookie)||StrUtil.isBlankIfStr(name)){
+            throw new ParameterException();
+        }
+        ResultCodeEnum codeEnum = ResultCodeEnum.SUCCESS;
+        return new Result<>(codeEnum.getResultCode(),codeEnum.getMessage(),ReptileFactory.create(name).setCookie(cookie));
     }
 
 

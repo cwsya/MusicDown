@@ -1,13 +1,11 @@
 package org.cwsya.hifiadmin.service.reptile.impl;
 
 import org.cwsya.hifiadmin.service.reptile.ReptileService;
-import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -56,7 +54,10 @@ public class HifiniReptileServiceImpl implements ReptileService {
         return data.html() + html;
     }
 
-    public void setCookie(String cookie) {
+
+    @Override
+    public boolean setCookie(String cookie) {
         this.cookie = cookie;
+        return true;
     }
 }
