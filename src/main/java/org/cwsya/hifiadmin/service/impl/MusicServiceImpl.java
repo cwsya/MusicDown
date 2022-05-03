@@ -7,6 +7,7 @@ import org.cwsya.hifiadmin.mapper.MDataMapper;
 import org.cwsya.hifiadmin.pojo.PO.MDataEntity;
 import org.cwsya.hifiadmin.service.MusicService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 import java.sql.Struct;
@@ -56,6 +57,17 @@ public class MusicServiceImpl implements MusicService {
 
     @Override
     public MDataEntity getMusic(Integer id) {
-        return mDataMapper.selectById(id);
+
+        MDataEntity mDataEntity = mDataMapper.selectById(id);
+//        mDataEntity.getSource()
+        reptileData(mDataEntity);
+        return mDataEntity;
+    }
+    @Async("msgThreadPool")
+    void reptileData(MDataEntity mDataEntity){
+        if (mDataEntity.getUsable()!=1){
+           mDataEntity.getUrl();
+        }
+        System.out.println(131231);
     }
 }

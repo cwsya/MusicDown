@@ -7,9 +7,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c6cebe-0e92-490b-b895-e9fea6f4a1fd" name="变更" comment="项目雏形">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="a9c6cebe-0e92-490b-b895-e9fea6f4a1fd" name="变更" comment="介绍">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/config/ThreadToolConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/ReptileFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/ReptileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/impl/HifiniReptil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/impl/HifiniReptileServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/config/SaTokenConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/config/SaTokenConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/impl/MusicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/impl/MusicServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +35,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="github/MusicDown" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--follow-tags" />
@@ -70,7 +90,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.449862",
     "settings.editor.selected.configurable": "project.scopes",
-    "spring.configuration.checksum": "59482655b1cef8fa6510142f59a7d334"
+    "spring.configuration.checksum": "4e722e9e07b7d1afed502eb8334ffbc8"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -157,7 +177,8 @@
       <workItem from="1650888527768" duration="8922000" />
       <workItem from="1650981599710" duration="3413000" />
       <workItem from="1651022753212" duration="37167000" />
-      <workItem from="1651296694940" duration="14330000" />
+      <workItem from="1651296694940" duration="20475000" />
+      <workItem from="1651395268871" duration="5651000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1650729737231</created>
@@ -215,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651323310672</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="介绍">
+      <created>1651325012857</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1651325012857</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,6 +268,7 @@
     <MESSAGE value="权限类的操作&#10;idea不推荐Autowired问题&#10;sql小bug" />
     <MESSAGE value="rbac基本完工" />
     <MESSAGE value="项目雏形" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目雏形" />
+    <MESSAGE value="介绍" />
+    <option name="LAST_COMMIT_MESSAGE" value="介绍" />
   </component>
 </project>

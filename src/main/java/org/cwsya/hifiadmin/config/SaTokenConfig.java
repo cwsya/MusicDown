@@ -16,8 +16,12 @@ import java.util.List;
  */
 @Component
 public class SaTokenConfig implements StpInterface {
-    @Autowired
-    private RedisTemplate<String,String> redisTemplate;
+    private final RedisTemplate<String,String> redisTemplate;
+
+    public SaTokenConfig(RedisTemplate<String, String> redisTemplate) {
+        this.redisTemplate = redisTemplate;
+    }
+
     @Override
     public List<String> getPermissionList(Object loginId, String loginType) {
         UserAllEntity userAllEntity;
