@@ -5,16 +5,19 @@ import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 
 import java.io.IOException;
 import java.util.Objects;
 
+
 /**
- * hifini的爬虫
  * @author cws
  */
 public class HifiniReptileServiceImpl implements ReptileService {
+    Logger logger= LoggerFactory.getLogger(getClass());
     private final String url1= "https://www.hifini.com/thread-";
     private final String url2= ".htm";
 
@@ -27,17 +30,29 @@ public class HifiniReptileServiceImpl implements ReptileService {
     public String getData(String url) {
         Document dataAll;
         try {
-
-            dataAll = Jsoup.connect(url1 + url + url2).header("Cookie", cookie).get();
+            dataAll = Jsoup.connect(url1 + url + url2).header("Cookie", cookie).timeout(10*1000).get();
         } catch (IOException e) {
+            logger.error("爬取请求失败---->hifini-"+url);
             throw new RuntimeException(e);
         }
 
         String html ="<style>"+Objects.requireNonNull(dataAll.getElementById("body")).getElementsByTag("style").html()+"</style>";
-        Element data = dataAll.getElementsByAttributeValue("isfirst", "1").get(0);
-        Objects.requireNonNull(data.getElementById("player4")).remove();
-        Objects.requireNonNull(data.getElementsByTag("script")).remove();
-        Objects.requireNonNull(data.getElementById("tag")).remove();
+        Element data;
+        try {
+            data = dataAll.getElementsByAttributeValue("isfirst", "1").get(0);
+        }catch (Exception e){
+            logger.error("页面解析失败---->hifini-"+url);
+            return null;
+        }
+
+        try {
+            assert data != null;
+            Objects.requireNonNull(data.getElementById("player4")).remove();
+            Objects.requireNonNull(data.getElementsByTag("script")).remove();
+            Objects.requireNonNull(data.getElementById("tag")).remove();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         return data.html() + html;
     }
 

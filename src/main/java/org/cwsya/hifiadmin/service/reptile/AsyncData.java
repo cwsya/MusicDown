@@ -8,6 +8,9 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author cws
+ */
 @Service
 public class AsyncData {
 
@@ -29,10 +32,14 @@ public class AsyncData {
                 System.out.println("已提交---->"+mDataEntity.getUrl());
                 return;
             }
-            redisTemplate.opsForValue().set(redisDataName+mDataEntity.getSource()+mDataEntity.getUrl(),"1");
-            String data = ReptileFactory.create(mDataEntity.getSource()).getData(mDataEntity.getUrl());
-            if (!StrUtil.isBlankIfStr(data)) {
-                mDataMapper.updateById(new MDataEntity(mDataEntity.getId(),null,null,null,1,data));
+            redisTemplate.opsForValue().set(key,"1");
+            try {
+                String data = ReptileFactory.create(mDataEntity.getSource()).getData(mDataEntity.getUrl());
+                if (!StrUtil.isBlankIfStr(data)) {
+                    mDataMapper.updateById(new MDataEntity(mDataEntity.getId(),null,null,null,1,data));
+                    redisTemplate.delete(key);
+                }
+            }finally {
                 redisTemplate.delete(key);
             }
         }

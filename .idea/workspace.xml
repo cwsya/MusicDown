@@ -7,9 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c6cebe-0e92-490b-b895-e9fea6f4a1fd" name="变更" comment="添加爬虫功能&#10;待优化:&#10;cookie的更新&#10;并发情况下重复爬取问题">
+    <list default="true" id="a9c6cebe-0e92-490b-b895-e9fea6f4a1fd" name="变更" comment="优化已知的问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/controller/musicController/MusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/controller/musicController/MusicController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/AsyncData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/AsyncData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/impl/HifiniReptileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/impl/HifiniReptileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/cwsya/hifiadmin/TAdminApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/cwsya/hifiadmin/TAdminApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +145,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TAdminApplicationTests.logTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HifiAdmin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.cwsya.hifiadmin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.cwsya.hifiadmin" />
+      <option name="MAIN_CLASS_NAME" value="org.cwsya.hifiadmin.TAdminApplicationTests" />
+      <option name="METHOD_NAME" value="logTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TAdminApplicationTests.tttt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HifiAdmin" />
       <extension name="coverage">
@@ -166,6 +186,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TAdminApplicationTests.logTest" />
         <item itemvalue="JUnit.TAdminApplicationTests.tttt" />
         <item itemvalue="JUnit.TAdminApplicationTests.ceshi" />
         <item itemvalue="JUnit.TAdminApplicationTests.contextLoads" />
@@ -188,7 +209,7 @@
       <workItem from="1650981599710" duration="3413000" />
       <workItem from="1651022753212" duration="37167000" />
       <workItem from="1651296694940" duration="20475000" />
-      <workItem from="1651395268871" duration="9805000" />
+      <workItem from="1651395268871" duration="18153000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1650729737231</created>
@@ -267,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651550086402</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="已优化:&#10;并发情况下重复爬取问题&#10;待优化:&#10;cookie的更新">
+      <created>1651553327708</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1651553327708</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -295,6 +323,8 @@
     <MESSAGE value="介绍" />
     <MESSAGE value="爬虫雏形" />
     <MESSAGE value="添加爬虫功能&#10;待优化:&#10;cookie的更新&#10;并发情况下重复爬取问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加爬虫功能&#10;待优化:&#10;cookie的更新&#10;并发情况下重复爬取问题" />
+    <MESSAGE value="已优化:&#10;并发情况下重复爬取问题&#10;待优化:&#10;cookie的更新" />
+    <MESSAGE value="优化已知的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化已知的问题" />
   </component>
 </project>

@@ -17,7 +17,10 @@ public class WebConfig implements WebMvcConfigurer {
         //Sa-Token 权限拦截器
         registry.addInterceptor(new SaRouteInterceptor())
                         .addPathPatterns("/**")
-                        .excludePathPatterns("/isLogin","/login");
+                        .excludePathPatterns("/isLogin",
+                                "/login",
+                                "/music/getMusic",
+                                "/music/getMusicData");
         registry.addInterceptor(new SaAnnotationInterceptor()).addPathPatterns("/**");
     }
 }

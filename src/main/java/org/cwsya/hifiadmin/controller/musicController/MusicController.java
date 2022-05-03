@@ -66,7 +66,6 @@ public class MusicController {
         ResultCodeEnum codeEnum = ResultCodeEnum.SUCCESS;
         return new Result<>(codeEnum.getResultCode(),codeEnum.getMessage(),musicService.upMusic(new MDataEntity(id,null,null,null,1,data)));
     }
-    @SaCheckRole("admin")
     @PostMapping("/getMusic")
     public Result<?> getMusic(@RequestBody JSONObject jsonObject) throws ParameterException {
         Integer current=jsonObject.getInt("current");
@@ -83,7 +82,6 @@ public class MusicController {
         ResultCodeEnum codeEnum = ResultCodeEnum.SUCCESS;
         return new Result<>(codeEnum.getResultCode(),codeEnum.getMessage(),map);
     }
-    @SaCheckRole("admin")
     @PostMapping("/getMusicData")
     public Result<?> getMusicData(@RequestBody JSONObject jsonObject) throws ParameterException {
         Integer id = jsonObject.getInt("id");
