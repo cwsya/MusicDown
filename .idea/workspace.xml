@@ -7,16 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c6cebe-0e92-490b-b895-e9fea6f4a1fd" name="变更" comment="爬虫雏形">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_14_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/AsyncData.java" afterDir="false" />
+    <list default="true" id="a9c6cebe-0e92-490b-b895-e9fea6f4a1fd" name="变更" comment="添加爬虫功能&#10;待优化:&#10;cookie的更新&#10;并发情况下重复爬取问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HifiAdmin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HifiAdmin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/impl/MusicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/impl/MusicServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/impl/HifiniReptileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/impl/HifiniReptileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/cwsya/hifiadmin/TAdminApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/cwsya/hifiadmin/TAdminApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/AsyncData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/AsyncData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +188,7 @@
       <workItem from="1650981599710" duration="3413000" />
       <workItem from="1651022753212" duration="37167000" />
       <workItem from="1651296694940" duration="20475000" />
-      <workItem from="1651395268871" duration="7883000" />
+      <workItem from="1651395268871" duration="9805000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1650729737231</created>
@@ -267,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651547653182</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="添加爬虫功能&#10;待优化:&#10;cookie的更新&#10;并发情况下重复爬取问题">
+      <created>1651550086401</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1651550086402</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -294,6 +294,7 @@
     <MESSAGE value="项目雏形" />
     <MESSAGE value="介绍" />
     <MESSAGE value="爬虫雏形" />
-    <option name="LAST_COMMIT_MESSAGE" value="爬虫雏形" />
+    <MESSAGE value="添加爬虫功能&#10;待优化:&#10;cookie的更新&#10;并发情况下重复爬取问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加爬虫功能&#10;待优化:&#10;cookie的更新&#10;并发情况下重复爬取问题" />
   </component>
 </project>
