@@ -4,6 +4,10 @@ import org.cwsya.hifiadmin.mapper.UserAllMapper;
 import org.cwsya.hifiadmin.mapper.UserMapper;
 import org.cwsya.hifiadmin.pojo.PO.UserEntity;
 import org.cwsya.hifiadmin.service.AccessService;
+import org.cwsya.hifiadmin.service.reptile.ReptileFactory;
+import org.cwsya.hifiadmin.service.reptile.ReptileService;
+import org.cwsya.hifiadmin.service.reptile.impl.HifiniReptil;
+import org.cwsya.hifiadmin.service.reptile.impl.HifiniReptileServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -40,6 +44,13 @@ class TAdminApplicationTests {
         accessService.stopAccess(6);
         accessService.startAccess(6);
         accessService.getAccess(6,1);
+    }
+
+    @Test
+    public void tttt(){
+        ReptileService hifini = ReptileFactory.create("hifini");
+        String data = hifini.getData("11307");
+        System.out.println(data);
     }
 
 

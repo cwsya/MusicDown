@@ -6,6 +6,8 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.cwsya.hifiadmin.mapper.MDataMapper;
 import org.cwsya.hifiadmin.pojo.PO.MDataEntity;
 import org.cwsya.hifiadmin.service.MusicService;
+import org.cwsya.hifiadmin.service.reptile.AsyncData;
+import org.cwsya.hifiadmin.service.reptile.ReptileFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
@@ -20,8 +22,9 @@ public class MusicServiceImpl implements MusicService {
 
     private final MDataMapper mDataMapper;
 
-    public MusicServiceImpl(MDataMapper mDataMapper) {
+    public MusicServiceImpl(MDataMapper mDataMapper, AsyncData asyncData) {
         this.mDataMapper = mDataMapper;
+        this.asyncData = asyncData;
     }
 
     @Override
@@ -55,19 +58,16 @@ public class MusicServiceImpl implements MusicService {
         return mDataEntityPage;
     }
 
+
+    private final AsyncData asyncData;
+
     @Override
     public MDataEntity getMusic(Integer id) {
 
         MDataEntity mDataEntity = mDataMapper.selectById(id);
 //        mDataEntity.getSource()
-        reptileData(mDataEntity);
+        asyncData.reptileData(mDataEntity);
         return mDataEntity;
     }
-    @Async("msgThreadPool")
-    void reptileData(MDataEntity mDataEntity){
-        if (mDataEntity.getUsable()!=1){
-           mDataEntity.getUrl();
-        }
-        System.out.println(131231);
-    }
+
 }

@@ -24,3 +24,6 @@ sa-token:
   is-share: false
   token-style: uuid
   is-log: true
+
+data:
+  cookie: bbs_sid=g5qdmdmc5i4k38739t2dj991al; bbs_token=AMXpGb_2FLZCbrTZcRWasU4wLr3tJWeaoGQPTOiFneCQFBHodEch3MlvRZk2eLNLL9m1KUNFVNXluuV_2Bii3iKf7ZpckYI_3D

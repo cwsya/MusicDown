@@ -7,16 +7,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c6cebe-0e92-490b-b895-e9fea6f4a1fd" name="变更" comment="介绍">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/config/ThreadToolConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/ReptileFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/ReptileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/impl/HifiniReptil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/impl/HifiniReptileServiceImpl.java" afterDir="false" />
+    <list default="true" id="a9c6cebe-0e92-490b-b895-e9fea6f4a1fd" name="变更" comment="爬虫雏形">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_14_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/AsyncData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/config/SaTokenConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/config/SaTokenConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HifiAdmin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HifiAdmin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/impl/MusicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/impl/MusicServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/impl/HifiniReptileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cwsya/hifiadmin/service/reptile/impl/HifiniReptileServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/cwsya/hifiadmin/TAdminApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/cwsya/hifiadmin/TAdminApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +148,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TAdminApplicationTests.tttt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HifiAdmin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.cwsya.hifiadmin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.cwsya.hifiadmin" />
+      <option name="MAIN_CLASS_NAME" value="org.cwsya.hifiadmin.TAdminApplicationTests" />
+      <option name="METHOD_NAME" value="tttt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="HifiAdmin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.cwsya.hifiadmin.TAdminApplication" />
@@ -157,6 +173,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TAdminApplicationTests.tttt" />
         <item itemvalue="JUnit.TAdminApplicationTests.ceshi" />
         <item itemvalue="JUnit.TAdminApplicationTests.contextLoads" />
       </list>
@@ -178,7 +195,7 @@
       <workItem from="1650981599710" duration="3413000" />
       <workItem from="1651022753212" duration="37167000" />
       <workItem from="1651296694940" duration="20475000" />
-      <workItem from="1651395268871" duration="5651000" />
+      <workItem from="1651395268871" duration="7883000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1650729737231</created>
@@ -243,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651325012857</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="爬虫雏形">
+      <created>1651547653182</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1651547653182</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,6 +293,7 @@
     <MESSAGE value="rbac基本完工" />
     <MESSAGE value="项目雏形" />
     <MESSAGE value="介绍" />
-    <option name="LAST_COMMIT_MESSAGE" value="介绍" />
+    <MESSAGE value="爬虫雏形" />
+    <option name="LAST_COMMIT_MESSAGE" value="爬虫雏形" />
   </component>
 </project>
